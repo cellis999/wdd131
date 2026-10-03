@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(97, 97, 255);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(97, 97, 255);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 30px 0;
+}
+
+main {
+    background-color: rgb(190, 190, 192);
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    display: none;
+}
+
+.nav-links a {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#menu {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+}
+
+img {
+    border: 5px solid white;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.7);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
