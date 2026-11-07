@@ -19,7 +19,7 @@ document.getElementById('lvlup').addEventListener('click', function() {
 
 document.getElementById('attack').addEventListener('click', function() {
     snortleblatStats.health -= 10;
-    if (snortleblatStats.health < 0) {
+    if (snortleblatStats.health <= 0) {
         snortleblatStats.health = 0;
         alert('Character Died')
     }
